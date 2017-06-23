@@ -10,9 +10,6 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
    micaja1 = new CajaObj();
    miproyectil = new proyectiles();
-   // for(var i = 0; i < n_vertical; i++){
-   //  cajas[i] = new CajaObj(i*windowHeight/n_vertical);
-   // }
 }
 
 function mousePressed(){
@@ -67,8 +64,6 @@ function proyectiles(){
     ellipse(this.x, this.y, 60, 60);
   }
 }
-
-
 
 function draw() {
  
