@@ -63,7 +63,7 @@ function proyectiles(){
   }
 
   this.mostrar = function(){
-    fill(255);
+    fill(255, 0 , 0);
     ellipse(this.x, this.y, 60, 60);
   }
 }
