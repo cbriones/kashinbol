@@ -79,7 +79,7 @@ function draw() {
   miproyectil.mover();
   if (dist(micaja1.x, micaja1.y, miproyectil.x, miproyectil.y)<60){
     miproyectil.x = width;
-    miproyectil.y = map(random(), 0, 1, 0, height);
+    miproyectil.y = map(random(), 0, 1, 0, height-150);
     puntaje++;
   }
   textSize(60);
