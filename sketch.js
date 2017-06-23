@@ -11,7 +11,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
    micaja1 = new CajaObj();
    miproyectil = new proyectiles();
-  sliderSpeed = createSlider(0, 1, 4);
+  sliderSpeed = createSlider(0, 5, 1, .1);
 }
 
 function mousePressed(){
