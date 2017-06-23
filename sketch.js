@@ -3,6 +3,7 @@ var velProyectil;
 var cajas = [];
 var n_vertical = 1500;
 var puntaje = 0;
+var sliderSpeed;
 
 
 function setup() {
@@ -10,6 +11,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
    micaja1 = new CajaObj();
    miproyectil = new proyectiles();
+  sliderSpeed = createSlider(0, 1, 4);
 }
 
 function mousePressed(){
@@ -55,7 +57,7 @@ function proyectiles(){
       this.y = map(random(), 0, 1, 0, height);
     }
    
-  this.x = this.x - 10;
+  this.x = this.x - sliderSpeed.value()*10;
 
   }
 
