@@ -49,12 +49,12 @@ function CajaObj(){
 
 function proyectiles(){
   this.x = width;
-  this.y = map(random(), 0, 1, 0, height);
+  this.y = map(random(), 0, 1, 0, height-100);
 
   this.mover = function() {
     if (this.x < 0) {
       this.x = width;
-      this.y = map(random(), 0, 1, 0, height);
+      this.y = map(random(), 0, 1, 0, height-100);
     }
    
   this.x = this.x - sliderSpeed.value()*10;
