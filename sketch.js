@@ -22,17 +22,17 @@ function CajaObj(){
 
   var r = random();
   this.x = width/10;
-  this.y = height-150;
+  this.y = height-30;
 
   this.mover = function() {
    
-   if (this.y > height-100){
+   if (this.y > height-30){
     vel= -vel*0.6;
-    this.y = height-100;
+    this.y = height-30;
    }
-   else if (this.y < 0){
+   else if (this.y < 30){
     vel = -vel;
-    this.y = 0;
+    this.y = 30;
     
    }
    else 
@@ -49,12 +49,12 @@ function CajaObj(){
 
 function proyectiles(){
   this.x = width;
-  this.y = map(random(), 0, 1, 0, height-100);
+  this.y = map(random(), 0, 1, 30, height-30);
 
   this.mover = function() {
     if (this.x < 0) {
       this.x = width;
-      this.y = map(random(), 0, 1, 0, height-100);
+      this.y = map(random(), 0, 1, 30, height-30);
     }
    
   this.x = this.x - sliderSpeed.value()*10;
@@ -76,7 +76,7 @@ function draw() {
   miproyectil.mover();
   if (dist(micaja1.x, micaja1.y, miproyectil.x, miproyectil.y)<60){
     miproyectil.x = width;
-    miproyectil.y = map(random(), 0, 1, 0, height-200);
+    miproyectil.y = map(random(), 0, 1, 0, height-30);
     puntaje++;
   }
   textSize(60);
