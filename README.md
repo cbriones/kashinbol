@@ -7,5 +7,7 @@ How to Play: click accelerates the ball upwards. Try to catch as many red balls 
 
 
 Pending:
-      add possibility of achieving records (most eats in a fixed amount of time, etc.)
+
+      add the possibility of achieving records (most eats in a fixed amount of time, etc.)
+      
       adding a new mode... energy going down to zero (game over)... try to eat new balls to recover it.
