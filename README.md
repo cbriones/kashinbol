@@ -1,6 +1,8 @@
 # kashinbol
-silly game test 01 using P5.js
-play it here https://cbriones.github.io/kashinbol/
+silly test game using P5.js libraries
+
+Play it here https://cbriones.github.io/kashinbol/
+
 How to Play: click accelerates the ball upwards. Try to catch as many red balls as you can.
 
 
